@@ -1,37 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celso Paredo | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="light">
 
 <header>
-    <h2>Paredo Portfolio</h2>
+    <div class="logo">Celso Paredo</div>
     <nav>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <button id="theme-btn"><i class="fas fa-moon"></i></button>
     </nav>
 </header>
 
-<section id="about" class="card">
-    <h3>About Me</h3>
-    <p>Hello! I'm a student learning web development.</p>
+<section class="hero" id="about">
+    <div class="hero-container">
+        <div class="hero-text">
+            <p class="tag">FRONTEND & BACKEND DEVELOPER</p>
+            <h1>Hi, I'm Celso</h1>
+            <p class="bio">A passionate developer from the Philippines, building clean, responsive, and modern web experiences.</p>
+            <div class="btns">
+                <div class="box-placeholder"></div>
+                <button class="hire-me" onclick="sendEmail()">Hire Me</button>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <div class="circle">
+                <img src="your-image.png" alt="Celso">
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="services" class="card">
-    <h3>Services</h3>
-    <p>Simple Website Design</p>
-    <p>Basic JavaScript Projects</p>
+<section class="white-sec" id="projects">
+    <h2>Projects</h2>
+    <div class="line"></div>
+    <div class="grid">
+        <div class="card">
+            <div class="card-h"><h3>Portfolio</h3><i class="fas fa-external-link-alt"></i></div>
+            <p>My personal website.</p>
+        </div>
+        <div class="card">
+            <div class="card-h"><h3>Calculator</h3><i class="fas fa-external-link-alt"></i></div>
+            <p>Simple JS app.</p>
+        </div>
+        <div class="card">
+            <div class="card-h"><h3>Todo App</h3><i class="fas fa-external-link-alt"></i></div>
+            <p>Task manager project.</p>
+        </div>
+    </div>
 </section>
 
-<section id="contact" class="card">
-    <h3>Contact</h3>
-    <p>Email: celso.paredo@urios.edu.ph</p>
-    <button onclick="msg()">Click Me</button>
+<section class="white-sec" id="skills">
+    <h2>Skills</h2>
+    <div class="line"></div>
+    <div class="skills-box">
+        <div class="skill">
+            <div class="info"><span>HTML</span><span>90%</span></div>
+            <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+            <div class="info"><span>CSS</span><span>80%</span></div>
+            <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill">
+            <div class="info"><span>JavaScript</span><span>65%</span></div>
+            <div class="bar"><div class="fill" style="width:65%"></div></div>
+        </div>
+    </div>
 </section>
 
-<script src="script.js"></script>
+<section class="contact-sec" id="contact">
+    <h2>Contact</h2>
+    <div class="line"></div>
+    <p>celso.paredo@urios.edu.ph</p>
+    <button class="send-btn" onclick="sendEmail()"><i class="fas fa-envelope"></i> Send Email</button>
+</section>
+
+<button id="up-btn"><i class="fas fa-arrow-up"></i></button>
+
+<script src="app.js"></script>
 </body>
 </html>
